@@ -20,14 +20,14 @@ git clone https://github.com/ManuQ14/delilah-resto
 
 2) Instalar las dependencias:
 <li>npm install</li>
-npm i -g nodemon</li>
-npm i --save express</li>
-npm i --save body-parser</li>
-npm i --save jsonwebtoken</li>
-npm -i --save dotenv</li>
-npm -i --save sequelize</li>
-npm -i — save mysql2</li>
-npm -i --save bcrypt</li>
+<li>npm i -g nodemon</li>
+<li>npm i --save express</li>
+<li>npm i --save body-parser</li>
+<li>npm i --save jsonwebtoken</li>
+<li>npm -i --save dotenv</li>
+<li>npm -i --save sequelize</li>
+<li>npm -i — save mysql2</li>
+<li>npm -i --save bcrypt</li>
 
 3) Acceder a la base de datos:
 Abrir https://remotemysql.com/ 
