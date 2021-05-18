@@ -19,7 +19,7 @@ Desde consola ejecutar el comando:
 git clone https://github.com/ManuQ14/delilah-resto
 
 2) Instalar las dependencias:
-npm install
+<li>npm install</li>
 npm i -g nodemon
 npm i --save express
 npm i --save body-parser
