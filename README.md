@@ -40,8 +40,5 @@ Utilizar 'force: true' sólo la primera vez que se corre la aplicación, y luego
 Iniicar la aplicación con el comando:
 nodemon app
 
-5) Documentación de la API:
-Abrir el archivo openapi.js e importarlo en Swagger
-IMPORTANTE: Para crear un usuario ADMIN, es necesario agregar la propiedad 'isAdmin: true', ya que por defecto si no agregamos esta propiedad el usuario no tiene permisos de edición.
-6) Preparado para utilizar!
-Testear los endpoints provistos desde postman para poder hacer uso de la API y base de datos generadas
+5) IMPORTANTE: Para crear un usuario ADMIN, es necesario agregar la propiedad 'isAdmin: true' (en el archivo app.js), ya que por defecto si no agregamos esta propiedad el usuario no tiene permisos de edición.
+6) Testear los endpoints provistos desde postman para poder hacer uso de la API y base de datos generadas
