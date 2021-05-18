@@ -3,13 +3,13 @@ DelilahResto
 Tercer trabajo del curso de Desarrollo Web Full Stack de Acámica.
 
 Tecnologías utilizadas:
-Node js
-Express
-MySQL
-Postman
-Sequelize
-Swagger
-JWT
+<li>Node js</li>
+<li>Express</li>
+<li>MySQL</li>
+<li>Postman</li>
+<li>Sequelize</li>
+<li>Swagger</li>
+<li>JWT</li>
 
 Instalación e inicialización del proyecto:
 1) Clonar el proyecto:
@@ -20,14 +20,14 @@ git clone https://github.com/ManuQ14/delilah-resto
 
 2) Instalar las dependencias:
 <li>npm install</li>
-npm i -g nodemon
-npm i --save express
-npm i --save body-parser
-npm i --save jsonwebtoken
-npm -i --save dotenv
-npm -i --save sequelize
-npm -i — save mysql2
-npm -i --save bcrypt
+npm i -g nodemon</li>
+npm i --save express</li>
+npm i --save body-parser</li>
+npm i --save jsonwebtoken</li>
+npm -i --save dotenv</li>
+npm -i --save sequelize</li>
+npm -i — save mysql2</li>
+npm -i --save bcrypt</li>
 
 3) Acceder a la base de datos:
 Abrir https://remotemysql.com/ 
