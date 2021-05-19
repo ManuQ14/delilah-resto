@@ -1,0 +1,219 @@
+openapi: 3.0.0
+info:
+  title: Delilah Restó Manuel Quintana
+  description: 'Tercer proyecto de acámica, proyecto de API de pedidos'
+  version: 1.0.0
+  contact:
+    email: manuquintanafotos@gmail.com
+    url: 'https://github.com/ManuQ14/delilah-resto'
+paths:
+  /usuarios:
+    post:
+      tags:
+        - Usuarios
+      parameters:
+        - name: Crear usuario
+          in: query
+          description: Este método crea el usuario
+          schema:
+            type: string
+      summary: Crea el usuario
+      responses:
+        '201':
+          description: Usuario creado correctamente
+        '400':
+          description: Error al crear el usuario
+        '500':
+          description: Error en el servidor
+  '/usuarios/:id':
+    post:
+      tags:
+        - Usuarios
+      parameters:
+        - name: Login de user
+          in: query
+          description: Login de usuario
+          schema:
+            type: string
+      summary: Login de usuarios
+      responses:
+        '201':
+          description: Usuario creado con éxito
+        '400':
+          description: Usuario no válido
+        '500':
+          description: Error de servidor
+  /pedidos:
+    post:
+      tags:
+        - Pedidos
+      parameters:
+        - name: Crea un pedido
+          in: query
+          description: Crea el pedido
+          schema:
+            type: string
+      summary: Crea un pedido
+      responses:
+        '201':
+          description: pedido creado con éxito
+        '400':
+          description: Error al crear pedido
+        '500':
+          description: Error de servidor
+    get:
+      tags:
+        - Pedidos
+      parameters:
+        - name: Obtiene los pedidos
+          in: query
+          description: Obtiene todos los pedidos
+          schema:
+            type: string
+      summary: Obtiene todos los pedidos
+      responses:
+        '200':
+          description: Pedido
+        '400':
+          description: Error al crear pedido
+        '500':
+          description: Error de servidor
+  '/pedidos/:id':
+    get:
+      tags:
+        - Pedidos
+      parameters:
+        - name: Obtiene un pedido
+          in: query
+          description: Obtiene un pedido específico por ID
+          schema:
+            type: string
+      summary: Obtiene un pedido en especial
+      responses:
+        '201':
+          description: Se obtuvo el pedido
+        '400':
+          description: No se pudo obtener el pedido solicitado
+        '500':
+          description: Error de servidor
+    put:
+      tags:
+        - Pedidos
+      parameters:
+        - name: Actualiza el pedido
+          in: query
+          description: Actualiza el pedido específico
+          schema:
+            type: string
+      summary: Actualiza un pedido específico
+      responses:
+        '201':
+          description: Pedido actualizado con éxito
+        '400':
+          description: No se pudo actualizar el pedido
+        '500':
+          description: Error de servidor
+    delete:
+      tags:
+        - Pedidos
+      parameters:
+        - name: Elimina un pedido
+          in: query
+          description: Elimina un pedido específico
+          schema:
+            type: string
+      summary: Elimina un pedido
+      responses:
+        '201':
+          description: Pedido eliminado con éxito
+        '400':
+          description: No se pudo eliminar el pedido
+        '500':
+          description: Error de servidor
+  /productos:
+    post:
+      tags:
+        - Productos
+      parameters:
+        - name: Crea un producto
+          in: query
+          description: Crea un producto
+          schema:
+            type: string
+      summary: Crea un producto
+      responses:
+        '200':
+          description: pedido creado con éxito
+        '400':
+          description: Error al crear pedido
+        '500':
+          description: Error del servidor
+    get:
+      tags:
+        - Productos
+      parameters:
+        - name: Obtiene todos los productos
+          in: query
+          description: Obtiene todos los productos
+          schema:
+            type: string
+      summary: Obtiene todos los productos
+      responses:
+        '200':
+          description: Pedido
+        '400':
+          description: Error al crear pedido
+        '500':
+          description: Error de servidor
+  '/productos/:id':
+    get:
+      tags:
+        - Productos
+      parameters:
+        - name: Obtiene un producto
+          in: query
+          description: Obtiene un producto específico
+          schema:
+            type: string
+      summary: Obtiene un pedido en especial
+      responses:
+        '201':
+          description: Se obtuvo el pedido
+        '400':
+          description: No se pudo obtener el pedido solicitado
+        '500':
+          description: Error de servidor
+    put:
+      tags:
+        - Productos
+      parameters:
+        - name: Actualiza un producto
+          in: query
+          description: Actualiza un producto específico
+          schema:
+            type: string
+      summary: Actualiza un producto específico
+      responses:
+        '201':
+          description: Pedido actualizado con éxito
+        '400':
+          description: No se pudo actualizar el pedido
+        '500':
+          description: Error de servidor
+    delete:
+      tags:
+        - Productos
+      parameters:
+        - name: Elimina un producto
+          in: query
+          description: Elimina un producto específico
+          schema:
+            type: string
+      summary: Elimina un producto específico
+      responses:
+        '201':
+          description: Pedido eliminado con éxito
+        '400':
+          description: No se pudo eliminar el pedido
+        '500':
+          description: Error de servidor
