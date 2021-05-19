@@ -12,11 +12,9 @@ Tecnologías utilizadas:
 <li>JWT</li>
 
 Instalación e inicialización del proyecto:
-1) Clonar el proyecto:
-Clonar el repositorio desde https://github.com/ManuQ14/delilah-resto
+1) Clonar/Descargar el proyecto desde: https://github.com/ManuQ14/delilah-resto
 
-Desde consola ejecutar el comando:
-git clone https://github.com/ManuQ14/delilah-resto
+
 
 2) Instalar las dependencias:
 <li>npm install</li>
