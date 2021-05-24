@@ -41,6 +41,6 @@ Utilizar 'force: true' sólo la primera vez que se corre la aplicación, y luego
 Iniicar la aplicación con el comando:
 nodemon app
 
-6) IMPORTANTE: Para crear un usuario ADMIN, es necesario agregar la propiedad 'isAdmin: true' (en el archivo app.js), ya que por defecto si no agregamos esta propiedad el usuario no tiene permisos de edición.
+6) IMPORTANTE: Para crear un usuario ADMIN, es necesario agregar la propiedad 'isAdmin: true' (en el archivo app.js), ya que por defecto si no agregamos esta propiedad el usuario no tiene permisos de edición. //CORREGIR
 
 7) Testear los endpoints provistos desde Postman para poder hacer uso de la API y base de datos generadas. Los cambios en la DB se verán reflejados en el phpMyAdmin de remotemysql logueado con los datos provistos en el .env
