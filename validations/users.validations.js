@@ -21,13 +21,14 @@ const validations = {
         }
     },
     isAdmin: (req, res, next) => {
-        if (!req.user.isAdmin) {
-            res.status(403).json({
+        if (req.user.isAdmin) {
+            next();
+        } else {
+            res.status(401).json({
                 isSucces: false,
-                error: 'Usted no tiene permisos para acceder al recurso solicitado'
-            });
+                error: "El usuario no es admin"
+            })
         }
-        next();
     }
 }
 
