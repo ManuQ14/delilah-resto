@@ -26,4 +26,15 @@ db.sequelize = sequelize;
 db.productos = require('./productos.models')(sequelize, DataTypes);
 db.pedidos = require('./pedidos.models')(sequelize, DataTypes);
 db.usuarios = require('./usuarios.models')(sequelize, DataTypes);
+
+//relaciones
+db.pedidos.belongsToMany(db.productos, {
+    through: "pedidosProductos"
+});
+
+db.productos.belongsToMany(db.pedidos, {
+    through: "pedidosProductos"
+});
+
+
 module.exports = db;
