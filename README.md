@@ -43,7 +43,7 @@ Una vez que tenemos el acceso a la DB y inicializar la app. En la consola ejecut
   "usuario":"admin,
   "clave":"acamica1234"
 }
-Esto devolverá el token de admin que se requiere en los demás endpoints como el Bearer authorization
+Esto devolverá el token de admin que se requiere en los demás endpoints en el Bearer authorization
 
 7) Testear los endpoints provistos desde Postman para poder hacer uso de la API y base de datos generadas. Los cambios en la DB se verán reflejados en el phpMyAdmin de remotemysql logueado con los datos provistos en el .env
 
