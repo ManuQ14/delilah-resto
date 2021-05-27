@@ -9,6 +9,10 @@ app.use(bodyParser.json());
 
 app.use((req, res, next) => {
     console.log('La ruta accedida es: ' + req.path);
+
+
+    // Encabecedados que permites (ej. 'X-Requested-With,content-type')
+    //res.setHeader('Access-Control-Allow-Headers', '*');
     next();
 });
 
