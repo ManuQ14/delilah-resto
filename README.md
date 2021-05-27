@@ -24,7 +24,7 @@ Instalación e inicialización del proyecto:
 <li>npm i --save jsonwebtoken</li>
 <li>npm -i --save dotenv</li>
 <li>npm -i --save sequelize</li>
-<li>npm -i — save mysql2</li>
+<li>npm -i -- save mysql2</li>
 <li>npm -i --save bcrypt</li>
 
 3) Acceder a la base de datos:
