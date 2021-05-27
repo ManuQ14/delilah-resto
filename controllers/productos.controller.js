@@ -17,12 +17,11 @@ const productosController = {
         } catch (error) {
             res.status(500).json({
                 isSucces: false,
-                error: 'No se pudo crear el nuevo producto'
+                error: 'No se pudo crear el nuevo producto' + error
 
             })
-
         }
-
+        res.status(204).json();
     },
 
     //getPedidos actions
@@ -34,9 +33,6 @@ const productosController = {
             res.status(204).json()
         }
     },
-
-
-
 
     //get products by id actions
     getById: async (req, res) => {
@@ -51,7 +47,6 @@ const productosController = {
         } else {
             res.status(404).json()
         }
-
     },
 
     //update Actions

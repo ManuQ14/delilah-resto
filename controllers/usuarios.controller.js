@@ -66,19 +66,7 @@ const usuariosController = {
             isAdmin: await isAdmin(usuario)
         }, config.jwtSecret);
         res.json(token);
-    },
-
-
-    getUsuarios: async (req, res) => {
-        let usuario = await db.usuarios.findAll()
-        if (usuario.length > 0) {
-            res.json(usuario);
-        } else {
-            res.status(204).json()
-        }
-    },
-
-
+    }
 }
 
 
@@ -95,9 +83,6 @@ async function validateCorreoElectronico(email) {
     }
 }
 
-
-
-
 async function validateUsernameAndPassword(usuario, clave) {
     const usuarioDb = await db.usuarios.findOne({
         where: {
@@ -111,11 +96,8 @@ async function validateUsernameAndPassword(usuario, clave) {
     if (!compareResult) {
         return false
     }
-
     return true;
-
 }
-
 
 async function isAdmin(usuario) {
     const usuarioDb = await db.usuarios.findOne({
@@ -123,14 +105,13 @@ async function isAdmin(usuario) {
             usuario: usuario
         }
     })
-    if (usuarioDb != null && usuarioDb.isAdmin) {
-        return true
-    } else {
-        return false
-    }
+    if (usuarioDb !== null && usuarioDb.isAdmin)
+        return true;
+    return false;
+
 }
 
 
 
 
-module.exports = usuariosController
+module.exports = usuariosController;
