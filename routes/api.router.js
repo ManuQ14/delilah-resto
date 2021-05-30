@@ -19,7 +19,7 @@ router.delete('/productos/:id', userValidation.isAuthorized, userValidation.isAd
 
 
 //Pedidos routers
-router.post('/pedidos', userValidation.isAuthorized, userValidation.isAdmin, pedidosController.createPedidos);
+router.post('/pedidos', userValidation.isAuthorized, pedidosController.createPedidos);
 router.get('/pedidos', userValidation.isAuthorized, userValidation.isAdmin, pedidosController.getPedidos);
 router.get('/pedidos/:id', userValidation.isAuthorized, pedidosController.getPedidosById);
 router.put('/pedidos/:id', userValidation.isAuthorized, userValidation.isAdmin, pedidosController.updatePedidos);
